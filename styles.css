@@ -10,20 +10,41 @@ body {
   color: #FEF2BF;
 }
 
-.container {
+#game-btn {
+  width: 538.4px;
   display: block;
-  width: 50%;
   margin: auto;
-
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 
 .btn {
   margin: 25px;
-  display: inline-block;
+  /* display: inline-block; */
   height: 200px;
   width: 200px;
   border: 10px solid black;
   border-radius: 20%;
+}
+@media (max-width: 740px) {
+  #game-btn {
+    width: 398.4px;
+    display: block;
+    margin: auto;
+  }
+
+  .btn {
+    margin: 15px;
+    /* display: inline-block; */
+    height: 150px;
+    width: 150px;
+    border: 10px solid black;
+    border-radius: 15%;
+  }
 }
 
 .game-over {
