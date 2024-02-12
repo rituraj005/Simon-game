@@ -46,6 +46,23 @@ body {
     border-radius: 15%;
   }
 }
+/* start button style... */
+#start-button {
+  font-size: 2rem;
+  font-family: 'Press Start 2P', cursive;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #FEF2BF;
+  cursor: pointer;
+  border: 3px solid;
+  margin-top: 10px;
+}
+#start-button:hover {
+  background-color: #000; /* Button background color on hover */
+  color: #FEF2BF; /* Text color on hover */
+}
+
+
 
 .game-over {
   background-color: red;
