@@ -38,7 +38,7 @@ $(".btn").click( function() {
 
 
 //keyevent listener
-$(document).keydown(function() {
+$("#start-button").click(function() {
   if(gamePattern.length === 0)
   nextSequence();
 });
@@ -47,7 +47,7 @@ $(document).keydown(function() {
 
 //sound play for button press.
 function playSound(name) {
-  var audio = new Audio(name + ".mp3");
+  var audio = new Audio("./sounds/" + name + ".mp3");
   audio.play();
 }
 
@@ -55,7 +55,7 @@ function playSound(name) {
 //animation
 function animatePress(currentColor) {
   $("#" + currentColor).addClass("pressed");
-  setTimeout(function() { $("#" + currentColor).removeClass("pressed"); }, 100);
+  setTimeout(function() { $("#" + currentColor).removeClass("pressed"); }, 50);
 }
 
 
@@ -68,7 +68,7 @@ $(".btn").hover(function() {
 
 
 // answer checking
-    var ansCount = 0;
+  var ansCount = 0;
 function checkAnswer()
 {
   for(var i=0; i<gamePattern.length; i++)
@@ -77,7 +77,7 @@ function checkAnswer()
       ansCount++;
       console.log(ansCount);
     } else {
-      var audio2 = new Audio("wrong.mp3");
+      var audio2 = new Audio("./sounds/wrong.mp3");
       audio2.play();
       $("body").addClass("game-over");
       setTimeout( function() { $("body").removeClass("game-over");}, 200 );
