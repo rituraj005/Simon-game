@@ -11,7 +11,7 @@ body {
 }
 
 #game-btn {
-  width: 538.4px;
+  width: 458px;
   display: block;
   margin: auto;
 }
@@ -23,10 +23,10 @@ body {
 }
 
 .btn {
-  margin: 25px;
+  margin: 15px;
   /* display: inline-block; */
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 180px;
   border: 10px solid black;
   border-radius: 20%;
 }
