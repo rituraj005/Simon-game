@@ -47,7 +47,7 @@ $("#start-button").click(function() {
 
 //sound play for button press.
 function playSound(name) {
-  var audio = new Audio("./sounds/" + name + ".mp3");
+  var audio = new Audio(name + ".mp3");
   audio.play();
 }
 
@@ -77,7 +77,7 @@ function checkAnswer()
       ansCount++;
       console.log(ansCount);
     } else {
-      var audio2 = new Audio("./sounds/wrong.mp3");
+      var audio2 = new Audio("wrong.mp3");
       audio2.play();
       $("body").addClass("game-over");
       setTimeout( function() { $("body").removeClass("game-over");}, 200 );
